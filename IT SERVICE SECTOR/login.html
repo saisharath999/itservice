@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+
+function myfun()
+{
+document.getElementById('a').style.display="none"
+document.getElementById('b').style.display="block"  
+}
+
+function myfun1()
+{
+document.getElementById('a').style.display="block"
+document.getElementById('b').style.display="none"    
+}
+
+// login form
+
+function myfun2()
+{
+username=document.getElementById('u');
+sp=document.getElementById('sp');
+password=document.getElementById('p');
+sp1=document.getElementById('sp1');
+
+if(username.value=="")
+{
+sp.innerHTML="! please enter username";
+sp.style.color="#ff0000";
+username.style.borderStyle="none none solid none";
+username.style.borderColor="red";
+username.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp.innerHTML="";
+username.style.border="";
+}
+
+
+if(password.value=="")
+{
+sp1.innerHTML="! please enter password";
+sp1.style.color="#ff0000";
+password.style.borderStyle="none none solid none";
+password.style.borderColor="red";
+password.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp1.innerHTML="";
+password.style.border="";
+}
+
+}
+
+
+
+// registration form
+
+
+function myfun3()
+{
+
+firstname=document.getElementById('f');
+sp2=document.getElementById('sp2');
+lastname=document.getElementById('l');
+sp3=document.getElementById('sp3');
+email=document.getElementById('e');
+sp4=document.getElementById('sp4');
+password=document.getElementById('pa');
+sp5=document.getElementById('sp5');
+confirmpassword=document.getElementById('cp');
+sp6=document.getElementById('sp6');
+date=document.getElementById('da');
+sp7=document.getElementById('sp7');
+month=document.getElementById('mo');
+sp07=document.getElementById('sp07');
+year=document.getElementById('ye');
+sp007=document.getElementById('sp007');
+gender=document.getElementById('g');
+gender1=document.getElementById('g1');
+sp8=document.getElementById('sp8');
+mobile=document.getElementById('mob');
+sp9=document.getElementById('sp9');
+
+
+if(firstname.value=="")
+{
+sp2.innerHTML="! please enter firstname";
+sp2.style.color="#ff0000";
+firstname.style.borderStyle="none none solid none";
+firstname.style.borderColor="red";
+firstname.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp2.innerHTML="";
+firstname.style.border="";
+}
+
+
+if(lastname.value=="")
+{
+sp3.innerHTML="! please enter lastname";
+sp3.style.color="#ff0000";
+lastname.style.borderStyle="none none solid none";
+lastname.style.borderColor="red";
+lastname.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp3.innerHTML="";
+lastname.style.border="";
+}
+
+
+if(email.value=="")
+{
+sp4.innerHTML="! please enter your email";
+sp4.style.color="#ff0000";
+email.style.borderStyle="none none solid none";
+email.style.borderColor="red";
+email.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp4.innerHTML="";
+email.style.border="";
+}
+
+
+if(password.value=="")
+{
+sp5.innerHTML="! please enter password";
+sp5.style.color="#ff0000";
+password.style.borderStyle="none none solid none";
+password.style.borderColor="red";
+password.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp5.innerHTML="";
+password.style.border="";
+}
+
+
+if(confirmpassword.value=="")
+{
+sp6.innerHTML="! please enter confirm password";
+sp6.style.color="#ff0000";
+confirmpassword.style.borderStyle="none none solid none";
+confirmpassword.style.borderColor="red";
+confirmpassword.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp6.innerHTML="";
+confirmpassword.style.border="";
+}
+
+
+if(date.value=="")
+{
+sp7.innerHTML="! select your date";
+sp7.style.color="#ff0000";
+return false;
+}
+else
+{
+sp7.innerHTML="";
+}
+
+
+if(month.value=="")
+{
+sp07.innerHTML="! select your month";
+sp07.style.color="#ff0000";
+return false;
+}
+else
+{
+sp07.innerHTML="";
+}
+
+
+if(year.value=="")
+{
+sp007.innerHTML="! select your year";
+sp007.style.color="#ff0000";
+return false;
+}
+else
+{
+sp007.innerHTML="";
+}
+
+
+
+if(!(gender.checked) && !(gender1.checked))
+{
+sp8.innerHTML="! select your gender";
+sp8.style.color="#ff0000";
+return false;
+}
+else
+{
+sp8.innerHTML="";
+}
+
+
+if(mobile.value=="")
+{
+sp9.innerHTML="! please enter Mobile Number";
+sp9.style.color="#ff0000";
+mobile.style.borderStyle="none none solid none";
+mobile.style.borderColor="red";
+mobile.style.borderWidth="1px";
+return false;
+}
+else
+{
+sp9.innerHTML="";
+mobile.style.border="";
+}
+
+
+}
+
+
+</script>
+
+
+
+</head>
+<body class="lobg">
+
+<!--navbar begining-->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand ml-5 text-white" href="#">SS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mr-5" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active pl-2">
+          <a class="nav-link" href="#">Index</a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link" href="service.html">Services</a>
+        </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="leaders.html">Team Leaders</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="clients.html">Clients</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="login.html">Registration</a>
+          </li>		  
+      </ul>
+    </div>
+  </nav>
+<!--navbar end-->
+
+ <div class="container mt-3" style="display:none" id="a">
+ <div class="row">
+<div class="col-lg-4"></div>
+<div class="col-lg-4 text-white mt-5 p-4">
+<h3 class="text-center pb-4">Login</h3>
+
+
+	<div class="form-row">
+					
+                  <div class="form-group col-md-12">
+                    <input type="text" class="form-control" id="u" name="email" placeholder="username">
+					<span id="sp"></span>
+                  </div>
+
+				  
+                </div>	
+				
+
+	<div class="form-row mt-3">
+					
+                  <div class="form-group col-md-12">
+                    <input type="password" class="form-control" id="p" name="email" placeholder="password">
+					<span id="sp1"></span>
+                  </div>
+
+				  
+                </div>					
+
+<div class="form-row mt-3">
+				
+<div class="col-lg-6 mt-2 cur" onclick="myfun()">
+
+<h6 class="text-primary">create account</h6>
+
+</div>
+
+
+<div class="col-lg-6 text-right">
+
+     <button type="submit" class="btn btn-primary" onclick="myfun2()" >Log In</button>
+
+</div>
+ 
+ 
+ </div> 
+ 
+</div>
+<div class="col-lg-4"></div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!--registration begin-->
+
+<div class="container rounded-lg  mt-3" id="b" style="display:block">
+<div class="row">
+<div class="col-lg-3"></div>
+<div class="col-lg-6 text-white p-5 mt-5">
+
+<hgroup class="pb-4">
+<h2>Create an account</h2>
+<h6>Continue to Your Account</h6>
+</hgroup>
+
+        <form>
+		
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="f" name="first" placeholder="First Name">
+				  <span id="sp2"></span>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="l" name="last" placeholder="Last Name">
+					<span id="sp3"></span>
+                    </div>    
+					
+					</div>
+	
+				<div class="form-row mt-3">
+					
+                  <div class="form-group col-md-12">
+                    <input type="email" class="form-control" id="e" name="email" placeholder="Email">
+					<span id="sp4"></span>
+                  </div>
+
+				  
+                </div>	
+
+                <div class="form-row mt-3">
+                  <div class="form-group col-md-6">
+                  <input type="password" class="form-control" id="pa" name="first" placeholder="Password">
+				  <span id="sp5"></span>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <input type="password" class="form-control" id="cp" name="last" placeholder="Confirm Password">
+					<span id="sp6"></span>
+                    </div>    
+					
+					</div>
+
+					
+					
+					
+<div class="mt-3">
+
+<h5>Birthday :</h5>
+
+<div class="form-row mr-5">
+
+
+<div class="form-group col-lg-4" id="da" >
+<select class="form-control">
+<script>
+ for(i=1;i<=31;i++)
+ {
+  document.write("<option>"+i+"</ option>")   
+ }   
+</script>
+</select>
+
+<span id="sp7"></span>
+
+</div>
+
+				
+<div class="form-group col-lg-4" id="mo" >
+
+<select class="form-control">
+<script>
+var months=["jan","feb","mar","apr","may","june","july","aug","sep","oct","nov","dec"] 
+ for(i=0;i<=11;i++)
+ {
+  document.write("<option>"+months[i]+"</ option>")   
+ }   
+</script>
+</select>
+
+<span id="sp07"></span>
+</div>
+
+
+
+<div class="form-group col-lg-4" id="ye" >
+<select class="form-control">
+<script>
+ for(i=2019;i>=1947;i--)
+ {
+  document.write("<option>"+i+"</ option>")   
+ }   
+</script>
+</select>
+
+<span id="sp007"></span>					
+</div>	
+
+
+</div>	
+</div>			
+
+                <div class="form-group mt-3 ml-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender[]" id="g" value="Male">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender[]" id="g1" value="Female">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                  </div>
+                  <span id="sp8"></span>
+              </div>					
+				
+				
+				<div class="form-row mt-4">
+					
+                  <div class="form-group col-md-12">
+                    <input type="number" class="form-control" id="mob" name="email" placeholder="+91.....">
+					<span id="sp9"></span>
+                  </div>
+
+                </div>
+				
+				
+<div class="form-row mt-4">
+				
+<div class="col-lg-6 mt-2 cur" onclick="myfun1()">
+
+<h6 class="text-primary">Login</h6>
+
+</div>
+
+
+<div class="col-lg-6 text-right">
+
+     <button type="button" class="btn btn-primary" onclick="myfun3()" >Sign Up</button>
+
+</div>
+ 
+ 
+ </div>				
+							
+    </form>
+</div>
+<div class="col-lg-3"></div>
+</div>
+</div>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+<!--footer begin-->
+
+
+<div class="container-fluid bgc text-white p-5">
+
+<div class="row">
+ 
+    
+
+<div class="col-lg-4 ml-5">
+
+<h6>ABOUT US</h6>
+
+<p>
+We provide world–class software, but we understand that the most valuable solutions are the ones that fit you the best. We listen closely to your needs and have a knack for applying what we learn to further the goals you set out.      
+</p>
+
+<a href="about.html">
+
+    <h6 class="text-primary">Read More</h6>
+
+</a>
+
+</div>
+
+<div class="col-lg-2">
+    <h6>MENU</h6>
+    <ul class="list-unstyled">
+      <a href="index.html" class="text-white" style="text-decoration:none;"><li>Index</li></a>
+      <a href="about.html" class="text-white" style="text-decoration:none;"><li>About Us</li></a>
+      <a href="service.html" class="text-white" style="text-decoration:none;"><li>Services</li></a>
+      <a href="leaders.html" class="text-white" style="text-decoration:none;"><li>Team Leaders</li></a>
+      <a href="contact.html" class="text-white" style="text-decoration:none;"><li>Contact Us</li></a>
+        </ul>
+
+</div>
+
+
+<div class="col-lg-3">
+<h6>CONTACT US</h6>
+<p>#101,Arc Flora Apartments, Anupama Nagar Colony, 
+    Hasthinapuram,Road No-7,
+     Hyderabad-500079.
+    <br>
+    91-9949237265, 91-9491549585,
+    040-24042175
+</p>
+
+</div>
+
+<div class="col-lg-2">
+
+<h6 class="ml-3 mb-3">SOCIAL MEDIA</h6>
+
+<a href="http://www.twitter.com"><img class="ml-3" src="assets/images/t.jpg"  width="25"/>
+</a>
+
+<a href="http://www.google.com"><img class="ml-3" src="assets/images/g.jpg" width="25"/>
+</a>
+
+<a href="http://www.fb.com"><img class="ml-3" src="assets/images/f.jpg" width="25"/>
+</a>
+</div>
+
+
+</div>
+
+<hr class="bg-dark">
+
+<div class="row">
+<div class="col-lg-4">   
+
+<h6> &copy; 2019 SS Company, All Rights Reserved </h6>
+</div>
+
+<div class="col-lg-4"></div>
+
+<div class="col-lg-4">
+
+
+ 
+        <ul class="list-inline">
+                <li class="list-inline-item">Privacy Policy</li>
+                <li class="list-inline-item">Terms of Use</li>
+                <li class="list-inline-item">Site Map</li>
+         </ul>
+
+
+</div> 
+</div>
+
+</div> 
+
+
+<!--footer end-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+</body>
+</html>
